@@ -1,0 +1,374 @@
+﻿登录页: /login/login
+
+基础信息：
+
+基础信息默认页 /basicIn_formation/index
+
+行政区划 /basicIn_formation/area/area
+
+客户信息 /basicIn_formation/customer_information/customer_information
+
+客户要求 /basicIn_formation/customer_information/customer_requirements
+
+客户业务要求 /basicIn_formation/customer_information/customer_business
+
+客户物流对照 /basicIn_formation/customer_information/customer_logistics
+
+供应商信息 /basicIn_formation/supplier_information/supplier_information
+
+供应商要求 /basicIn_formation/supplier_information/supplier_requirements
+
+仓库 /basicIn_formation/warehouse_information/warehouse
+
+库存货位 /basicIn_formation/warehouse_information/stock_level
+
+存货金属分类 /basicIn_formation/inventory_information/inventory_classification
+
+存货信息 /basicIn_formation/inventory_information/inventory_information
+
+生产车间 /basicIn_formation/production_information/production_workshop
+
+机台信息 /basicIn_formation/production_information/machine_information
+
+结算方式协议 /basicIn_formation/financial_information/settlement_method_agreement
+
+
+*************************************************************************************************
+
+
+订单管理：
+
+订单管理默认页 /order_management/index
+
+采购合同 /order_management/contracts_management/purchase_contract
+
+销售合同 /order_management/contracts_management/sales_contract
+
+采购订单 /procurement_management/procurement_operations/purchase_orders
+
+采购订单明细 /procurement_management/procurement_operations/purchase_orders_detail
+
+采购到货单 /procurement_management/procurement_operations/purchase_arrival
+
+采购退货申请单 /procurement_management/procurement_operations/purchase_return_goods
+
+销售订单 /order_management/sales_operations/sales_orders
+
+销售订单明细 /sales_management/sales_operations/sales_orders_detail
+
+销售退货申请单 /sales_management/sales_operations/sales_return_goods
+
+委外加工合同 /order_management/machining_operations/commission_machining_contract
+
+委外角料交付订单 /order_management/machining_operations/commission_angleMaterial_orders
+
+委外原材到货单 /order_management/machining_operations/commission_return_orders
+
+客户加工合同 /order_management/machining_operations/custom_machining_contract
+
+客户角料加工订单 /order_management/machining_operations/costomer_angleMaterial_orders
+
+客户成品交付订单 /order_management/machining_operations/costomer_Product_orders
+
+代客分条订单 /order_management/machining_operations/valet_order
+
+借换单 /order_management/other_operations/loan_order
+
+借换单-换入 /order_management/other_operations/loan_order_enter
+
+借换单-换出 /order_management/other_operations/loan_order_outer
+
+*************************************************************************************************
+
+
+
+仓库管理：
+
+仓库管理默认页 /warehouse_management/index
+
+采购到货单 /warehouse_management/library_management/purchase_arrival_goods
+
+采购入库单 /warehouse_management/library_management/purchase_enter_warehoue
+
+生产入库单 /warehouse_management/library_management/production_enter_warehoue
+
+入库单    /warehouse_management/library_management/enter_warehoue
+
+退货入库单 /warehouse_management/library_management/return_goods_enter
+
+销售退货单 /warehouse_management/library_management/sale_return_goods
+
+调拨入库  /warehouse_management/library_management/allocation_enter_warehouse
+
+其他入库单 /warehouse_management/library_management/other_enter_warehouse
+
+待送货统计 /warehouse_management/outgoing_management/pending_delivery_statistics
+
+销售送货单 /warehouse_management/outgoing_management/sale_deliver_goods
+
+送货签回单 /warehouse_management/outgoing_management/deliver_goods_back
+
+原材出库单 /warehouse_management/outgoing_management/material_outgoing
+
+采购退货单 /warehouse_management/outgoing_management/purchase_return_goods
+
+送货单     /warehouse_management/outgoing_management/deliver_goods
+
+调拨出库 /warehouse_management/outgoing_management/allocation_outgoing
+
+其他出库单 /warehouse_management/outgoing_management/other_outgoing
+
+辅料出库单 /warehouse_management/outgoing_management/accessories_outgoing
+
+库存明细查询 /warehouse_management/inventory_query/inventory_detail
+
+磅差明细查询 /warehouse_management/inventory_query/inventory_differ
+
+出入库流水账 /warehouse_management/inventory_query/flow_bill
+
+目标客户调整 /warehouse_management/inventory_adjustment/target_custom
+
+移区移位 /warehouse_management/inventory_adjustment/area_move
+
+盘点调整 /warehouse_management/inventory_adjustment/inventory_adjust
+
+质量调整 /warehouse_management/inventory_adjustment/quality_adjust
+
+重量拆分 /warehouse_management/inventory_adjustment/weight_adjust
+
+形态转换 /warehouse_management/inventory_adjustment/form_convert
+
+入库质检单 /warehouse_management/quality_management/enter_warehouse_quality
+
+出库质检单 /warehouse_management/quality_management/outer_warehouse_quality
+
+*************************************************************************************************
+
+
+
+生产管理：
+
+生产管理默认页 /generation_management/index
+
+待生产销售明细 /generation_management/production_operations/product_sale_Detail
+
+生产指令单 /generation_management/production_operations/product_instructions
+
+生产排程 /generation_management/production_operations/product_scheduling
+
+
+
+*************************************************************************************************
+
+
+
+价格设置：
+
+价格设置默认页 /price_settings/index
+
+现货价格查询 /price_settings/price_baise/spot_stock_price
+
+采购价格金属成分 /price_settings/price_baise/purchase_price_metal
+
+销售价格金属成分 /price_settings/price_baise/sale_price_metal
+
+供应商报价 /price_settings/purchase_price/supplier_price
+
+采购损耗系数 /price_settings/purchase_price/purchase_loss_coefficient
+
+采购长度调整价设置 /price_settings/purchase_price/purchase_cd_adjust_set
+
+采购运输调整价设置  /price_settings/purchase_price/purchase_tran_adjust_set
+
+采购加工费价格设置 /price_settings/purchase_price/purchase_machining_price
+
+采购状态调整价设置 /price_settings/purchase_price/purchase_status_adjust_set
+
+采购厚度调整价设置 /price_settings/purchase_price/purchase_thickness_adjuset_set
+
+采购宽度调整价设置 /price_settings/purchase_price/purchase_width_adjust_set
+
+销售损耗系数 /price_settings/sale_price/sales_loss_coefficient
+
+销售长度调整价设置 /price_settings/sale_price/sale_cd_adjust_set
+
+销售运输调整价设置 /price_settings/sale_price/sale_tran_adjust_set
+
+销售产品用途费设置 /price_settings/sale_price/sale_product_use_set
+
+销售加工费价格设置 /price_settings/sale_price/sale_machining_price
+
+销售状态调整价设置 /price_settings/sale_price/sale_status_adjust_set
+
+销售厚度调整价设置 /price_settings/sale_price/sale_thickness_adjuset_set
+
+销售宽度调整价设置 /price_settings/sale_price/sale_width_adjust_set
+
+
+*************************************************************************************************
+
+
+
+财务管理：
+
+财务管理默认页 /financial_control/index
+
+//月关账
+/financial_control/financial_account/financial_account
+
+// 采购结算单
+/financial_control/settle_account/purchase_settle_accounts
+
+// 采购结算单明细
+/financial_control/settle_account/purchase_settle_accounts_detail
+
+// 销售结算单
+/financial_control/settle_account/sales_settle_accounts
+
+// 销售结算单明细
+/financial_control/settle_account/sales_settle_accounts_detail
+
+// 库存结算单
+/financial_control/settle_account/stock_settle_accounts
+
+// 客户账号
+/financial_control/should_collect/custom_accout
+
+// 客户会计期间
+/financial_control/should_collect/accounting_period
+
+// 对账单
+/financial_control/should_collect/reconciliation_order
+
+// 贷款匹配单(应收)
+/financial_control/should_collect/loan_match_order
+
+// 退货匹配单(应收)
+/financial_control/should_collect/return_match_order
+
+// 收款单
+/financial_control/should_collect/get_fund
+
+// 客户退款单
+/financial_control/should_collect/return_fund
+
+// 供应商账号
+/financial_control/should_pay/supplier_account
+
+// 供应商会计期间
+/financial_control/should_pay/accounting_during
+
+// 贷款匹配单(应付)
+/financial_control/should_pay/loan_matching_list
+
+// 退货匹配单(应付)
+/financial_control/should_pay/return_match_list
+
+// 付款单
+/financial_control/should_pay/get_fund_list
+
+// 供应商退款单
+/financial_control/should_pay/return_fund_list
+
+// 开票管理
+/financial_control/receipt/receipt_manage
+
+// 开票统计
+/financial_control/receipt/receipt_statistics
+
+// 开票明细
+/financial_control/receipt/receipt_detail
+
+// 收票登记
+/financial_control/receipt/collect_tickets_register
+
+// 收票匹配单
+/financial_control/receipt/collect_tickets_matching
+
+*************************************************************************************************
+
+
+
+报表管理：
+
+报表管理默认页
+/report_management/index
+
+采购入库明细
+/report_management/purchase_report/purchase_details
+
+销售订单执行明细表
+/report_management/sales_report/sales_order_execution_schedule
+
+发货明细
+/report_management/sales_report/delivery_details
+
+客户利润分析表
+/report_management/sales_report/customer_profit_and_return_on_investment
+
+客户资金风险控制表
+/report_management/sales_report/customer_risk_control
+
+库存日报
+/report_management/warehouse_report/inventory_daily
+
+实时库存表
+/report_management/warehouse_report/real_time_inventory_table
+
+代客分条明细
+/report_management/warehouse_report/valet_detail
+
+生产入库明细
+/report_management/warehouse_report/production_enter_warehoue_detail
+
+生产日报表
+/report_management/generation_report/generation_diary
+
+每月库存利息汇总表
+/report_management/financial_report/month_stock_interest
+
+每月应收利息汇总表
+/report_management/financial_report/month_collect_interest
+
+应收账款汇总表
+/report_management/financial_report/collect_credit
+
+应收账款明细表
+/report_management/financial_report/collect_credit_detail
+
+*************************************************************************************************
+
+
+
+权限管理：
+
+权限管理默认页 /access_management/index
+
+公司信息 /access_management/organizational_structure_management/company_information
+
+区域管理 /access_management/organizational_structure_management/area_management
+
+部门管理 /access_management/organizational_structure_management/department_management
+
+岗位管理 /access_management/organizational_structure_management/post_management
+
+员工管理 /access_management/organizational_structure_management/staff_management
+
+账号管理 /access_management/user_authority_management/account_management
+
+角色管理 /access_management/user_authority_management/role_management
+
+权限管理 /access_management/user_authority_management/authority_management
+
+权限数据分组 /access_management/user_authority_management/authority_data
+
+数据权限管理 /access_management/user_authority_management/data_authority_management
+
+编码生成规则 /access_management/parameter_settings/coding_rule
+
+参数配置 /access_management/parameter_settings/parameter_settings
+
+修改密码 /access_management/outer_account/change_password
+
+*************************************************************************************************
+

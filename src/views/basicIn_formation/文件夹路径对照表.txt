@@ -1,0 +1,13 @@
+﻿area  -- 行政区划
+
+customer_information  -- 客户基础信息
+
+supplier_information  -- 供应商基础信息
+
+warehouse_information -- 仓库基础信息
+
+inventory_information -- 存货基础信息
+
+production_information -- 生产基础信息
+
+financial_information -- 财务基础信息

@@ -1,0 +1,26 @@
+## 侧边栏使用文档
+
+### 例子
+
+```html
+
+<side-bar-comp :visible.sync="visible" innerWidth="123px">
+    <template slot="body">
+      主体内容
+    </template>
+    <template slot="footer">
+      底部放置的内容
+    </template>
+  </side-bar-comp>
+```
+```javascript
+import SideBarComp from '@/components/sideBar/sideBar.vue'
+export default {
+  components:{
+    SideBarComp
+  },
+}
+```
+参数 | 说明 | 类型 | 可选值 | 默认值
+visible | 侧边栏是否可见，务必加上.sync | Boolean | —— | false
+innerWidth | 侧边栏的宽度,请带上单位 | String | —— | '300px'

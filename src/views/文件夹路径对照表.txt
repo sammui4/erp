@@ -1,0 +1,15 @@
+﻿basic_information  -- 基础信息
+
+order_management  -- 订单管理
+
+warehouse_management  -- 仓库管理
+
+generation_management -- 生产管理
+
+price_settings -- 价格设置
+
+financial_control -- 财务管理
+
+report_management -- 报表管理
+
+access_management -- 权限管理

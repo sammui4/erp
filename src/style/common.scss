@@ -1,0 +1,944 @@
+@import "./variables.scss";
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 1200px;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+}
+input[type="number"]{
+  -moz-appearance:textfield;
+}
+//头部加载条样式
+#nprogress .bar{
+    background: $red!important;
+}
+
+#nprogress .spinner-icon{
+    border-top-color:$red;
+    border-left-color:$red;
+}
+
+#nprogress .peg{
+    box-shadow:0 0 10px $red, 0 0 5px $red;
+}
+
+.globalScrollbar .el-scrollbar__wrap {
+    margin-bottom: -17px !important;
+    margin-right: -17px !important;
+}
+
+/* 重置Message 消息提示样式 begin */
+.el-message {
+    padding: 7px 15px 7px 20px !important;
+    min-width: initial !important;
+    top: 14px !important;
+}
+
+.el-message__content {
+    font-size: 12px !important;
+    color: #565555 !important;
+}
+
+.el-message--success {
+    background-color: #ebf8f2 !important;
+    border-color: #a7e1c4 !important;
+}
+/* 重置Message 消息提示样式 end */
+
+.globalTabsList .el-tabs__item {
+  height: 30px !important;
+  line-height: 30px !important;
+  font-size: 12px !important;
+  // padding: initial !important;
+  // width: 123px !important;
+  text-align: center !important;
+  color: #454545 !important;
+  padding:0 10px!important;
+}
+
+.globalTabsList .el-tabs__item:hover {
+    color: #0064FF !important;
+}
+
+.globalTabsList .el-tabs__item .el-icon-close:hover {
+    background-color: #858585 !important;
+    color: #fff !important;
+}
+
+.globalTabsList>.el-tabs__header .el-tabs__item .el-icon-close {
+    width: initial !important;
+}
+
+.globalTabsList>.el-tabs__header .el-tabs__item.is-active.is-closable {
+    background-color: #D8E8FC !important;
+}
+
+.globalTabsList .el-tabs__item.is-active {
+    color: #0064FF !important;
+}
+
+.globalTabsList>.el-tabs__header .el-tabs__item .el-icon-close {
+    font-weight: bolder;
+}
+
+.el-tabs__nav-next, .el-tabs__nav-prev {
+    line-height: 33px !important;
+}
+
+.globalTabsList > .el-tabs__header .el-tabs__item {
+    border-left: none !important;
+}
+
+.globalTabsList > .el-tabs__header .el-tabs__nav {
+    border: none !important;
+}
+
+.globalTabsList .el-tabs__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 1px;
+    height: 14px;
+    background-color: #d3d3d3;
+}
+
+.globalTabsList .el-tabs__item.is-active:before {
+    background-color: #D8E8FC;
+}
+
+.globalTabsList .el-tabs__item.is-active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 8px;
+    width: 1px;
+    height: 14px;
+    background-color: #F7F8F9;
+}
+
+.globalTabsList .el-tabs__nav .el-tabs__item:last-child:before {
+    display: none;
+}
+
+
+.globalTabsList .el-tabs--card>.el-tabs__header .el-tabs__item .el-icon-close {
+    position: relative;
+    font-size: 12px;
+    width: auto;
+    height: 14px;
+    width: 14px;
+    vertical-align: middle;
+    line-height: 14px;
+    overflow: hidden;
+    top: -1px;
+    right: -2px;
+    transform-origin: 100% 50%;
+}
+
+.globalTabsList>.el-tabs__header .el-tabs__item .el-icon-close {
+    width: 14px !important;
+    line-height: 14px !important;
+}
+
+// element 隐藏的滚动条
+.el-scrollbar__wrap {
+    overflow: auto !important;
+}
+
+// 上传附件样式
+.onlyOne_upload {
+    position: relative;
+}
+
+.onlyOne_upload > .el-upload-list {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    z-index: 1;
+}
+.onlyOne_upload-w {
+  position: relative;
+}
+
+.onlyOne_upload-w > .el-upload-list {
+  position: absolute;
+  left: 188px;
+  top: 0;
+  z-index: 1;
+}
+.onlyOne_upload-w .downloadButton{
+  position:relative;
+  top:1px;
+  margin-left: 6px;
+}
+// 上传附件样式
+//表单红色*号
+.addRed>label{
+  position: relative;
+}
+.addRed>label::before{
+  content: '*';
+  color: #f56c6c;
+  margin-right: 4px;
+}
+//表格红线提示
+#app .row-attention input{
+  border-color: #f56c6c;
+}
+#app .bgRed input{
+  background: #e6a23c;
+  // color:#fff!important;
+}
+
+// switch按钮 添加”开关文字“
+.switchStyle .el-switch__core:before {
+    content: "关";
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    top: 0;
+    color: #fff;
+}
+
+.switchStyle.is-checked .el-switch__core:before {
+    content: "开";
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    right: inherit;
+    top: 0;
+    color: #fff;
+}
+// switch按钮 添加”开关文字“
+
+//element input重置
+#app .el-form .el-input__inner{
+    height: 28px;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.el-form .el-form-item__label{
+    font-size: 12px;
+    color:#000;
+}
+
+.nrs-form{
+  margin-bottom: 0px;
+}
+
+.nrs-form .el-input__inner{
+  width: 162px;
+  box-sizing: border-box;
+}
+
+#app .nrs-form .el-form-item{
+  margin-bottom: 12px;
+}
+#app .el-form-item{
+  margin-bottom: 10px;
+}
+
+.nrs-form .el-textarea__inner,
+.nrs-form .el-date-editor.el-input{
+  width: 162px;
+}
+.hkm-table .cell .el-date-editor{
+  width: 100%;
+}
+#app .nrs-form .el-form-item__error{
+padding-top: 0px;
+}
+#app .el-tabs__header{
+  margin-bottom:8px;
+}
+.nrs-form .el-input__inner::-webkit-input-placeholder,
+.nrs-form .el-textarea__inner::-webkit-input-placeholder{
+  font-size: 12px;
+}
+
+#app .longer .el-input__inner,
+#app .longer .el-textarea__inner{
+  width: 439px;
+}
+#app .el-form--inline .longest.el-form-item{
+  // display: block;
+  // .el-input{
+  //   display: block;
+  // }
+  .el-input__inner{
+    width: 715px;
+  }
+}
+.two{
+  margin-right: 120px;
+  .el-form-item__content{
+    >.el-input{
+      width: 283px;
+    }
+  }
+}
+
+.el-date-editor .el-range__icon,
+.el-date-editor .el-range-separator {
+    line-height: 24px !important;
+}
+
+.el-date-editor .el-range__close-icon {
+    line-height: 22px !important;
+}
+
+
+.el-input.is-disabled .el-input__inner {
+    color: #454545 !important;
+}
+
+.el-input__inner {
+    color: #252525 !important;
+}
+
+/* 滚动条样式 begin */
+.scrollbar::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #ddd;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #eee;
+}
+/* 滚动条样式 end */
+
+// vue动画相关
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.faded-enter-active,
+.faded-leave-active {
+    transition: opacity .2s
+}
+
+.faded-enter, .faded-leave-to {
+    opacity: 0
+}
+
+//
+.globalChildrenPage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    padding:38px 20px 10px 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    background-color: #fff;
+    z-index: 98;
+}
+
+//按钮相关
+.w-button {
+    display: inline-block;
+    margin-right: 6px;
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    color: $button-color;
+    background: #fff;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    -webkit-appearance: none;
+    span {
+        margin-left: 2px;
+    }
+}
+
+.w-button:hover {
+    border-color:$deep-blue;
+    color: $deep-blue;
+}
+
+.w-button:active {
+    border-color: $blue;
+    background: $blue;
+    color: #fff;
+}
+
+//背景为蓝色
+.primary {
+    color: #fff;
+    background: $deep-blue;
+}
+
+.w-button.primary:hover {
+    background: $blue;
+    border-color:$blue;
+    color:#fff;
+}
+
+//绿色
+.w-button.addButton:hover{
+    border-color: $success;
+    color: $success;
+}
+
+.w-button.addButton:active{
+    background: $success;
+    color:#fff;
+}
+
+//红色
+.w-button.deleteButton:hover{
+    border-color: $danger;
+    color: $danger;
+}
+
+.w-button.deleteButton:active{
+    background: $danger;
+    color:#fff;
+}
+
+//禁用状态
+.w-button[disabled],
+.w-button:hover[disabled]{
+    // background: #F3F6FA;
+    background-color: #f5f7fa;
+    border-color: #e4e7ed;
+    color: #8A96A0;
+    cursor: not-allowed;
+}
+
+//圆角100px
+.is-round {
+    border-radius: 100px;
+}
+
+.back_link_style {
+    margin-right: 18px;
+    position: relative;
+}
+
+.back_link_style:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -12px;
+    top: 10px;
+    width: 1px;
+    height: 14px;
+    background-color: #d3d3d3;
+}
+
+//没有数据
+.nullData {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    min-height: 390px;
+    font-size: 14px;
+    color: #999;
+
+    background-color: #fff;
+    .nullDataImg {
+        margin-right: 37px;
+        width: 200px;
+        height: 200px;
+        background: url("../../static/img/noData.svg") left center no-repeat #fff;
+        background-size: 96%;
+    }
+    .nullDataText {
+      div:first-child {
+          margin-bottom: 7px;
+          font-size: 52px;
+          letter-spacing: 0;
+          color: #000;
+      }
+      div:last-child {
+          font-size: 24px;
+          color: #000;
+          letter-spacing: 0;
+      }
+    }
+}
+
+//内容区最外层容器
+.component-wrapper {
+    height: 100%;
+}
+//loading加入
+.parameter-setting:first-child {
+	// position: relative;
+	height: 100%;
+}
+
+.parameter-setting-wrapper {
+	height: 100%;
+	box-sizing: border-box
+}
+//tabie 100%高度相关
+.parameter-setting__table {
+	height: 100%;
+}
+.parameter-setting .component-wrapper{
+  padding:0;
+}
+
+// .w-tabs .hkm-table-wrapper{
+//   padding-bottom: 200px;
+// }
+.mainContent {
+    flex: auto;
+    height: 100%;
+}
+
+// c 按钮工具栏 begin
+.toolBoxWrap {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 113px;
+    z-index: 2;
+    height: 50px;
+    border-bottom: 1px solid #f4f4f4;
+    background-color: #fff;
+}
+
+.globalMainBox.active .toolBoxWrap {
+  left: 191px;
+}
+
+.toolBox {
+    position: relative;
+    padding: 12px 20px 15px 20px;
+}
+
+.toolBtn_list {
+    font-size: 0;
+}
+
+.toolBox_fixed_right {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    padding-right: 24px;
+    font-size: 0;
+}
+
+.pageBox {
+    position: relative;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.pageBox-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 115px;
+    z-index: 2;
+    padding: 6px 6px 6px 0;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    .page-number {
+        position: relative;
+        top: 1px;
+        margin-left: 24px;
+        font-weight: 400;
+        color: #606266;
+    }
+    .w-button {
+        padding: 4px 10px;
+        margin: 0 8px;
+    }
+}
+// c 按钮工具栏 end
+
+//头部按钮组
+.btn-group {
+    position: fixed;
+    top: 113px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 12px 20px 8px 20px;
+    background: #fff;
+    border-bottom: 1px solid #f4f4f4;
+    z-index: 3;
+    .btn-group-item {
+        display: flex;
+        align-items: center;
+        .mr-20 {
+            margin-right: 20px;
+        }
+    }
+}
+
+//按钮开启时的按钮组的显示
+.globalMainBox.active .btn-group{
+    left: 191px;
+}
+
+//分页相关
+.pagination-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 250px;
+    z-index: 2;
+    padding: 6px 0;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    .page-number {
+        position: relative;
+        top: 1px;
+        margin-left: 24px;
+        font-weight: 400;
+        color: #606266;
+    }
+    .w-button {
+        padding: 4px 10px;
+        margin: 0 8px;
+    }
+}
+
+//右侧搜索栏
+.search-bar.active {
+    right: 0;
+}
+
+.search-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    bottom: 0;
+    z-index: 200;
+    padding: 0 20px;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: -2px 0 6px 0 #d5dce6;
+    color: #000;
+    background: #fff;
+    transition: all 0.3s;
+    //标题样式
+    .search-bar-title {
+      position: absolute;
+      top: 0px;
+      left: 30px;
+      right: 30px;
+      padding: 30px 0;
+      background: #fff;
+      z-index: 5;
+      span {
+          display: inline-block;
+          font-size: 24px;
+      }
+      .special {
+          display: inline-block;
+          margin-left: 4px;
+          font-size: 14px;
+          color: #ccc;
+      }
+      #close {
+        font-size: 12px;
+        position: absolute;
+        top: 18px;
+        right: -17px;
+        color: #999;
+        cursor: pointer;
+      }
+    }
+
+    //里面的form样式
+    .search-bar-form {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 115px 28px 70px 0px;
+        margin-bottom: 70px;
+        //select重置
+        .el-select {
+            display: block;
+        }
+        .el-date-editor{
+          width: 100%;
+        }
+    }
+
+    //底部
+    .search-bar-footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px 0;
+        text-align: center;
+        background: #fff;
+        //按钮重置
+        .w-button {
+            padding: 10px 80px;
+            font-size: 14px;
+        }
+    }
+}
+.search-bar-w.active {
+  right: 0;
+}
+.search-bar-w {
+  overflow: hidden;
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  bottom: 0;
+  z-index: 200;
+  // padding: 0 20px;
+  // width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000;
+  // background: #fff;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: flex-end;
+  .search-bar-inner{
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom:0;
+    width: 300px;
+    background: #fff;
+    box-shadow: -2px 0 6px 0 #d5dce6;
+    padding: 0 20px;
+    position: relative;
+  }
+  .search-bar-outer{
+    // flex-grow:1
+    // position: absolute;
+    // top: 0;
+    // right: 340px;
+    // bottom:0;
+    // left:0;
+    flex-grow: 1;
+  }
+  //标题样式
+  .search-bar-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 30px;
+    padding: 30px 0 30px 30px ;
+    background: #fff;
+    z-index: 5;
+    span {
+        display: inline-block;
+        font-size: 24px;
+    }
+    .special {
+        display: inline-block;
+        margin-left: 4px;
+        font-size: 14px;
+        color: #ccc;
+    }
+    #close {
+      font-size: 12px;
+      position: absolute;
+      top: 18px;
+      right: -17px;
+      color: #999;
+      cursor: pointer;
+    }
+  }
+
+  //里面的form样式
+  .search-bar-form {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 115px 28px 70px 0px;
+      margin-bottom: 70px;
+      //select重置
+      .el-select {
+          display: block;
+      }
+      .el-date-editor{
+        width: 100%;
+      }
+  }
+
+  //底部
+  .search-bar-footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 20px 0;
+      text-align: center;
+      background: #fff;
+      //按钮重置
+      .w-button {
+          padding: 10px 80px;
+          font-size: 14px;
+      }
+  }
+}
+//头部表单通用样式
+.form-head-container {
+    position: fixed;
+    top: 114px;
+    left:0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px 8px;
+    background: #fff;
+    z-index:3;
+    //组件标题
+    .form-head-title{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color:$title-text;
+    }
+}
+
+.globalMainBox.active .form-head-container{
+    left: 191px;
+}
+
+//主内容区域
+
+.info-title{
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color:#D3D3D3;
+    span{
+        display: inline-block;
+        padding: 0 10px;
+        position: relative;
+        // top: -8px;
+        background: #fff;
+    }
+}
+
+.info-title:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: -30px;
+    right: -30px;
+    top: 10px;
+    background: $split-color;
+}
+
+//主内容区域tab重置
+.w-tabs{
+    .el-tabs__header{
+        .el-tabs__nav{
+            border-color: transparent!important;
+            display: flex;
+            align-items:flex-end;
+        }
+    }
+    .el-tabs__item{
+        flex-grow: 0;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 4px;
+        border-top: 1px solid #d9e2e9;
+        border-right: 1px solid #d9e2e9;
+        border-left: 1px solid #d9e2e9!important;
+        border-radius: 4px 4px 0 0;
+        color: #454545;
+        transition:all 0.3s;
+        font-weight: bold;
+    }
+    .el-tabs__item.is-active {
+        // height: 40px;
+        // line-height: 44px;
+        color: $deep-blue;
+        border-left:1px solid rgb(228, 231, 237)!important;
+        font-weight: bold;
+    }
+    .el-tabs__item:hover {
+        color: $deep-blue;
+    }
+}
