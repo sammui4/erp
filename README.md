@@ -1,6 +1,6 @@
 # tianqi_erp
 
-> 天奇ERP系统
+> ERP系统
 
 ## Build Setup
 
