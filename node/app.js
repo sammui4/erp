@@ -30,8 +30,6 @@ app.post('/data-web/crs/finance/accountSet/getAll.do',function (req,res) {
 app.post('/data-web/tokenLogin.do',function (req,res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function(err,fields,files) {
-        //所有的文本域、单选框，都放在fields中
-        //所有的文件类，放在了files中
         if(err){
             throw err
         }
@@ -42,8 +40,6 @@ app.post('/data-web/tokenLogin.do',function (req,res) {
 app.post('/data-web/token/getCurrentUser.do',function (req,res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function(err,fields,files) {
-        //所有的文本域、单选框，都放在fields中
-        //所有的文件类，放在了files中
         if(err){
             throw err
         }
