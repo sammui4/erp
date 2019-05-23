@@ -72,7 +72,7 @@ export function isNullOrUndefined(v) {
  */
 export function getIdArray1(Arr,idName){
   var array = Arr.map((obj)=>{
-    return obj[`${idName}`]*1
+    return obj[idName]*1
   })
   return array
 }
