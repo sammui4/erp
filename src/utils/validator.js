@@ -1,6 +1,5 @@
 /**
  * @description 检验 策略模式
- * @author 刘伟健
  */
 import {isEmptyValue} from './utils';
 
