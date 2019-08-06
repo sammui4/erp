@@ -39,4 +39,13 @@ const math = {};
   }
 })
 
+math.toFixed = function (num1,num2) {
+  if (!num1) {
+    return '';
+  }
+  let d = new Decimal(num1);
+  d = d.toFixed(num2);
+  return d.toString();
+}
+
 export default math;
