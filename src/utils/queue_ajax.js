@@ -27,6 +27,41 @@ function dequeue () {
   }
 }
 
+
+function loadReferencePrices (records) {
+
+  let model = this.model;
+  let total = records.length;
+
+  if (!total) {
+    return Promise.resolve();
+  }
+
+  return new Promise(resolve => {
+
+    let complete = () => {
+      if (!(--total)) {
+        resolve();
+        this.isOperating = false;
+      }
+    }
+
+    this.isOperating = true;
+    this.operatingTip = '正在计算参考单价';
+
+    records.forEach(record => {
+      queueAjax(() => {
+        return this.fetchReferencePrice(record)
+          .then(data => {
+            complete();
+
+            this.setReferencePrice(record, data);
+          });
+      })
+    })
+  })
+};
+
 export default function queueAjax (fn) {
   Q.push(fn);
 
