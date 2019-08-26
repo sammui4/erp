@@ -23,6 +23,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 
+node/app.js
+简易后台代码
+
 
 文件说明
 |-- src
