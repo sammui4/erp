@@ -1,3 +1,9 @@
+/*
+ * @Author: w
+ * @Date: 2019-08-28 16:31:16
+ * @LastEditors: w
+ * @LastEditTime: 2019-08-28 16:51:57
+ */
 export function isEmptyValue(v) {
   return v == null || v === '';
 }
@@ -198,4 +204,4 @@ export function blobToBase64(blob) {
         reject(new Error('文件流异常'));
       };
     });
-  },
+  }
